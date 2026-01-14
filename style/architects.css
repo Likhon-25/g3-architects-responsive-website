@@ -126,6 +126,7 @@ main {
 /* * some facts related styles */
 
 .facts-container{
+    margin-top: 100px;
     display: grid;
     grid-template-columns: repeat(4 , 1fr);
 }
@@ -164,8 +165,13 @@ main {
         flex-direction: column;
     }
 
-    .team-img-container{
+    .team-img-container ,
+    .facts-container{
         grid-template-columns: repeat(1, 1fr);
+    }
+    .facts-container{
+        justify-self: center;
+        gap: 24px;
     }
     .out-features{
         margin-left: 20px;
